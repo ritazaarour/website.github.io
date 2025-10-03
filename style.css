@@ -9,3 +9,13 @@ img {
     max-width: 500px;
     height: auto;
 }
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 15px;
+}
