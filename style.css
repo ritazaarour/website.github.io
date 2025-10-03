@@ -6,8 +6,8 @@ body {
 }
 
 img {
-    max: width 300px;
+    max-width: fit-content;
     height: auto;
     display: block;
-    margin: 20px 0;
+    margin: auto;
 }
