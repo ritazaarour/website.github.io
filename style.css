@@ -25,12 +25,8 @@ img {
 
 nav {
     display: flex;
-    margin: 20px 0;
-    margin-bottom: auto;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
-    border-bottom: 0.4em;
+    margin-bottom: 1em;
+    border-bottom: 0.4em solid oklch(80% 3% 200);
 }
 
 nav a {
@@ -42,6 +38,6 @@ nav a {
 }
 
 nav a.current {
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: 0.4em solid oklch(80% 3% 200);
     border-bottom: 0.4em;
 }
