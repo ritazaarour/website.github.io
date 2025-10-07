@@ -40,3 +40,8 @@ nav a {
     text-align: center;
     padding: 0.5em;
 }
+
+nav a.current {
+    border-bottom-color: oklch(80% 3% 200);
+    border-bottom: 0.4em;
+}
