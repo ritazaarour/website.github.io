@@ -1,8 +1,16 @@
+h1 {
+    color: hotpink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body { 
     /* Set line height to 1.5 times the font size 
         and use the OS's UI font as the website font
         */
     font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    display: block;
+    margin: 8px;
 }
 
 img {
