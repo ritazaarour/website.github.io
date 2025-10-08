@@ -1,3 +1,7 @@
+html {
+  --color-accent: lightpink;
+}
+
 h1 {
     color: hotpink;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,7 +46,7 @@ nav a.current {
     padding-bottom: 0.1em;
 }
 
-a:hover {
+nav a:hover {
     color:lightpink
     border-bottom: 0.4em solid lightpink
 }
