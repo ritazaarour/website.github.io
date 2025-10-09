@@ -31,19 +31,19 @@ img {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
 }
 
 .projects article {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
 }
 
 .projects h2 {
-    margin: 0;
+  margin: 0;
 }
 
 form {
