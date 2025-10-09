@@ -30,6 +30,13 @@ img {
     margin-right: auto;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1/-1;
+    gap: 1em;
+}
+
 nav {
     display: flex;
     margin-bottom: 1em;
