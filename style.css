@@ -47,6 +47,6 @@ nav a.current {
 }
 
 nav a:hover {
-    color:lightpink;
+    background-color:lightpink;
     border-bottom: 0.4em solid lightpink;
 }
