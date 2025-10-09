@@ -30,9 +30,12 @@ img {
     margin-right: auto;
 }
 
+.contact {
+    font: inherit;
+}
 form {
     display: grid;
-    grid-template-columns: subgrid;
+    grid-template-columns: auto 1fr;
     grid-column: 1/-1;
     gap: 1em;
 }
