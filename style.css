@@ -30,6 +30,11 @@ img {
     margin-right: auto;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
 form {
   display: grid; 
   grid-template-columns: auto 1fr;      
