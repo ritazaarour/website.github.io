@@ -88,6 +88,10 @@ nav a:hover {
     padding-bottom: 0.1em;
 }
 
+.resume h2{
+  text-transform: uppercase;
+  text-decoration: underline;
+}
 .resume time {
   font-style: italic;
 }
