@@ -87,3 +87,7 @@ nav a:hover {
     border-bottom: 0.4em solid lightpink;
     padding-bottom: 0.1em;
 }
+
+.resume time {
+  font-style: italic;
+}
