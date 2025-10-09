@@ -17,7 +17,7 @@ body {
     margin-inline: auto;
 }
 
-#home .align {
+.home {
     display: flex;
     text-align: center;
 }
