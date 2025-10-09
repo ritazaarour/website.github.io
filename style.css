@@ -35,6 +35,16 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
 
+.projects article {
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 1em;
+}
+
+.projects h2 {
+    margin: 0;
+}
+
 form {
   display: grid; 
   grid-template-columns: auto 1fr;      
