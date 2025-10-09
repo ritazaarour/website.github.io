@@ -36,6 +36,7 @@ img {
 }
 
 .projects-article {
+    display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
     gap: 1em;
@@ -83,4 +84,5 @@ nav a.current {
 nav a:hover {
     background-color:rgb(252, 227, 231);
     border-bottom: 0.4em solid lightpink;
+    padding-bottom: 0.1em;
 }
