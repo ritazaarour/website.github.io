@@ -30,14 +30,18 @@ img {
     margin-right: auto;
 }
 
-.contact {
-    font: inherit;
-}
 form {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-column: 1/-1;
-    gap: 1em;
+  display: grid;       
+  gap: 1em;            
+}
+
+form label {
+  display: grid;       
+  grid-column: 1 / -1;
+}
+
+form button {
+  grid-column: 1 / -1;
 }
 
 nav {
