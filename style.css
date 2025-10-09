@@ -12,10 +12,14 @@ body {
         and use the OS's UI font as the website font
         */
     font: 100%/1.5 system-ui;
-    text-align: center;
     max-width: 100ch;
     display: block;
     margin-inline: auto;
+}
+
+#home .align {
+    display: flex;
+    text-align: center;
 }
 
 img {
