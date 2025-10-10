@@ -94,6 +94,12 @@ nav a:hover {
 
 .resume h2{
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.resume hr{
+  margin-top: 0;
+  height: 3px;
 }
 
 .resume h4 {
