@@ -115,6 +115,10 @@ nav a:hover {
   margin-bottom: 0;
 }
 
+.resume ul {
+  margin-top: 0;
+}
+
 .resume h4 {
   text-align: center;
 }
