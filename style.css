@@ -88,9 +88,17 @@ nav a:hover {
     padding-bottom: 0.1em;
 }
 
+.resume h1 {
+  text-align: center;
+}
+
 .resume h2{
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.resume h4 {
+  text-align: center;
 }
 .resume time {
   font-style: italic;
