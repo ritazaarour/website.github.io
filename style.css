@@ -90,16 +90,24 @@ nav a:hover {
 
 .resume h1 {
   text-align: center;
+  color: #333;
+  margin-bottom: 0;
 }
 
-.resume h2{
+.resume h2 {
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.resume h3 {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .resume hr{
   margin-top: 0;
-  height: 3px;
+  border: none;
+  border-top: 3px solid #333
 }
 
 .resume h4 {
@@ -107,4 +115,6 @@ nav a:hover {
 }
 .resume time {
   font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
 }
