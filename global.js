@@ -33,4 +33,9 @@ for (let p of pages) {
   let title = p.title;
 
   url = !url.startsWith('http') ? BASE_PATH + url : url;
+
+  let a = document.createElement('a');
+  a.href = url;
+  a.textContent = title;
+  nav.append(a);
 }
