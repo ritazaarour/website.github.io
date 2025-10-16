@@ -7,7 +7,7 @@ function $$(selector, context = document) {
 const BASE_PATH =
   location.hostname === 'localhost' || location.hostname === '127.0.0.1'
     ? '/'
-    : '/website/';
+    : '/website.github.io/';
 
 let pages = [
   { url: '', title: 'Home' },
