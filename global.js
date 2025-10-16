@@ -47,7 +47,7 @@ currentLink?.classList.add("current");
 document.body.insertAdjacentHTML(
   'afterbegin',
   `
-	<label for="color-scheme">
+	<label class="color-scheme">
 		Theme:
 		<select>
 			<option value="light dark">Automatic</option>
