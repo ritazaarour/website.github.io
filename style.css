@@ -68,6 +68,12 @@ form button {
   grid-column: 1 / -1;
 }
 
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
 nav {
     display: flex;
     margin-bottom: 1em;
