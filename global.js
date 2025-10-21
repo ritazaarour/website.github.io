@@ -72,3 +72,19 @@ if ('colorScheme' in localStorage) {
   document.documentElement.style.setProperty('color-scheme', saved);
   select.value = saved;
 }
+
+export async function fetchJSON(url) {
+  try {
+    const response = await fetch(url);
+    console.log(response);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
