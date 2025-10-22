@@ -5,4 +5,4 @@ console.log(projects);
 
 const projectsContainer = document.querySelector('.projects');
 
-renderProjects(projects[0], projectsContainer, 'h2');
+renderProjects(projects, projectsContainer, 'h2');
