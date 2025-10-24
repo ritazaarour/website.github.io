@@ -12,6 +12,10 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2 {
+  text-align: left;
+}
+
 body { 
     /* Set line height to 1.5 times the font size 
         and use the OS's UI font as the website font
