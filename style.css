@@ -143,3 +143,23 @@ nav a:hover {
   margin-bottom: 0;
   text-align: right;
 }
+
+dl {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+dd {
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+  }
+
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
