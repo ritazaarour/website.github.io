@@ -145,16 +145,10 @@ nav a:hover {
 }
 
 dl {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }
-
-dd {
-  margin: 0;
-  padding: 0.5em 0 0.5em 0;
-  }
-
 
 dt {
   grid-row-start: 1;
