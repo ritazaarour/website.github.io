@@ -73,7 +73,7 @@ form button {
 
 .color-scheme {
   position: absolute;
-  top: 1rem;
+  top: 4rem;
   right: 1rem;
 }
 
@@ -84,7 +84,7 @@ nav {
 }
 
 nav a {
-    flex: 1
+    flex: 1;
     color: inherit;
     text-decoration: none;
     text-align: center;
