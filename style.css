@@ -77,13 +77,13 @@ form button {
   right: 1rem;
 }
 
-.home, .projects, .contact  h1{
+h1.home, h1.projects, h1.contact {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
 }
 
-.home, .projects h2 {
+h2.home, h2.projects {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
