@@ -41,18 +41,18 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
-  align-items: start;
 }
 
 .projects article {
-  display: block;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
 }
 
-.projects img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
+.project-details {
+  display: flex;
+  flex-direction: column;
 }
 
 .projects h2 {
