@@ -48,6 +48,13 @@ img {
   display: block;
 }
 
+.projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .projects h2 {
   margin: 0;
 }
