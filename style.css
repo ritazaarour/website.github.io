@@ -48,9 +48,6 @@ img {
 
 .projects article {
   display: block;
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-  gap: 1em;
 }
 
 .projects h2 {
