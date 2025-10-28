@@ -43,6 +43,7 @@ img {
   grid-template-rows: subgrid;
   grid-row: span 3;
   gap: 1em;
+  align-items: start;
 }
 
 .projects article {
