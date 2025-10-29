@@ -22,10 +22,10 @@ let data = [1, 2];
 let sliceGenerator = d3.pie();
 let arcData = sliceGenerator(data);
 let arcs = arcData.map((d) => arcGenerator(d));
+let colors = ['gold', 'purple'];
 arcs.forEach((arc, idx) => {
     d3.select('svg')
       .append('path')
       .attr('d', arc)
       .attr('fill', colors[idx % colors.length]);
 });
-let colors = ['gold', 'purple'];
