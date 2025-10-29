@@ -14,4 +14,32 @@ let arc = arcGenerator({
   startAngle: 0,
   endAngle: (2 * Math.PI)  
 });
+
 d3.select('svg').append('path').attr('d', arc).attr('fill', 'red');
+//drawing static pie chart 
+let data = [1, 2];
+
+let total = 0;
+
+for (let d of data) {
+  total += d;
+}
+//start and end angles for each slice
+let angle = 0;
+let arcData = [];
+
+for (let d of data) {
+  let endAngle = angle + (d / total) * 2 * Math.PI;
+  arcData.push({ startAngle: angle, endAngle });
+  angle = endAngle;
+}
+
+//path calculation for each slice  
+let arcs = arcData.map((d) => arcGenerator(d));
+
+arcs.forEach((arc) => {
+  d3.select('svg')
+    .append('path')
+    .attr('d', arc)
+    .attr('fill', 'red');
+}
