@@ -41,5 +41,7 @@ arcs.forEach((arc) => {
   d3.select('svg')
     .append('path')
     .attr('d', arc)
-    .attr('fill', 'red');
+    .attr('fill', colors.shift());
 });
+
+let colors = ['gold', 'purple'];
