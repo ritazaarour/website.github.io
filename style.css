@@ -184,7 +184,6 @@ dd {
   border: solid 1px #ccc;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  align-items: center;
   gap: 1em;
   padding: 1em;
   margin: 1em;
@@ -196,7 +195,9 @@ dd {
   gap: 0.5em;
 }
 .legend .swatch {
+  display: inline-block;
+  width: 1.5em;
   aspect-ratio: 1 / 1;
-  background-color: whitesmoke;
+  background: var(--color);
 }
 
