@@ -181,12 +181,22 @@ dd {
 }
 
 .legend {
-  aspect-ratio: 1 / 1;
   border: solid 1px #ccc;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-  display: flex;
   align-items: center;
   gap: 1em;
-  padding: 10px;
-  
+  padding: 1em;
+  margin: 1em;
 }
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.legend .swatch {
+  aspect-ratio: 1 / 1;
+  background-color: whitesmoke;
+}
+
