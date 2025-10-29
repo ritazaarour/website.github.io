@@ -203,3 +203,10 @@ dd {
   border-radius: 50%;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+  gap: 2em;
+  align-items: center;
+}
+
