@@ -18,9 +18,11 @@ let arc = arcGenerator({
 d3.select('svg').append('path').attr('d', arc).attr('fill', 'red');
 
 
-let data = rolledData.map(([year, count]) => {
-  return { value: count, label: year };
-});
+let rolledData = d3.rollups(
+  projects,
+  (v) => v.length,
+  (d) => d.year,
+);
 
 let sliceGenerator = d3.pie().value((d) => d.value);
 let arcData = sliceGenerator(data);
@@ -42,8 +44,6 @@ data.forEach((d, idx) => {
           .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
 });
 
-let rolledData = d3.rollups(
-  projects,
-  (v) => v.length,
-  (d) => d.year,
-);
+let data = rolledData.map(([year, count]) => {
+  return { value: count, label: year };
+});
