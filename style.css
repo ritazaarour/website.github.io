@@ -207,5 +207,6 @@ dd {
   display: flex;
   flex: 1;
   gap: 1em; 
+  align-items: center;
 }
 
