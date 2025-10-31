@@ -111,20 +111,22 @@ arcs.forEach((arc, i) => {
     .attr('d', arc)
     .attr('fill', colors(i))
     .on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
-        svg
-            .selectAll('path')
-            .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-        legend
-            .selectAll('li')
-            .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-            });
-        if (selectedIndex === -1) {
-            renderProjects(projects, projectsContainer, 'h2');
-        } else {
-            let filteredProjects = projects.filter((project) => {
-                return project.year === arcs[selectedIndex].data.label;
-            });
-            renderProjects(filteredProjects, projectsContainer, 'h2');
-        }
+      selectedIndex = selectedIndex === i ? -1 : i;
+
+      svg.selectAll('path')
+        .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
+
+      legend.selectAll('li')
+        .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
+
+      if (selectedIndex === -1) {
+        renderProjects(projects, projectsContainer, 'h2');
+      } else {
+        const selectedYear = data[selectedIndex].label;
+
+        const filteredProjects = projects.filter(p => p.year == selectedYear);
+
+        renderProjects(filteredProjects, projectsContainer, 'h2');
+      }
+    });
 });
