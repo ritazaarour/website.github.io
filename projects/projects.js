@@ -102,6 +102,9 @@ searchInput.addEventListener('change', (event) => {
   renderPieChart(filteredProjects);
 });
 
+let newSVG = d3.select('svg');
+newSVG.selectAll('path').remove();
+
 let selectedIndex = -1;
 let svg = d3.select('svg');
 svg.selectAll('path').remove();
