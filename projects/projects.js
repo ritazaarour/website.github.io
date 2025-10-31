@@ -15,9 +15,7 @@ let arc = arcGenerator({
   endAngle: (2 * Math.PI)  
 });
 
-d3.select('svg').append('path').attr('d', arc).attr('fill', 'red');
-
-//drawing static pie chart 
+//drawing static pie chart
 let rolledData = d3.rollups(
   projects,
   (v) => v.length,
@@ -121,13 +119,12 @@ arcs.forEach((arc, i) => {
             .selectAll('li')
             .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
             });
+        if (selectedIndex === -1) {
+            renderProjects(projects, projectsContainer, 'h2');
+        } else {
+            let filteredProjects = projects.filter((project) => {
+                return project.year === arcs[selectedIndex].data.label;
+            });
+            renderProjects(filteredProjects, projectsContainer, 'h2');
+        }
 });
-
-if (selectedIndex === -1) {
-  renderProjects(projects, projectsContainer, 'h2');
-} else {
-  let filteredProjects = projects.filter((project) => {
-    return project.label === arcs[selectedIndex].data.label;
-  });
-  renderProjects(filteredProjects, projectsContainer, 'h2');
-}
