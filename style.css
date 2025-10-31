@@ -227,5 +227,13 @@ dd {
 
 path {
   transition: 300ms;
+  cursor: pointer;
 }
 
+.selected {
+  --color: oklch(0.72 0.16 352) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
