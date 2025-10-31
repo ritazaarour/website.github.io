@@ -211,9 +211,21 @@ dd {
 }
 
 .searchBar {
-  width: fit-content;
+  width: 100%;
+  max-width: 400px;
   margin-inline: auto;
   margin-bottom: 2em;
-  height: 2em;
+  height: 4em;
+  font-size: 1em;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
 }
 

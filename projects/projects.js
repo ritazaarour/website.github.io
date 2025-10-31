@@ -78,7 +78,7 @@ function renderPieChart(projectsGiven) {
   d3.select('svg').selectAll('path').remove();
   // Remove existing legend items
   d3.select('.legend').selectAll('.legend-item').remove();
-  // update paths and legends, refer to steps 1.4 and 2.2
+  // update paths and legends
   newArcs.forEach((arc, idx) => {
     d3.select('svg')
       .append('path')
@@ -103,3 +103,9 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
+
+let newSVG = d3.select('svg');
+newSVG.selectAll('path').remove();
+
+//hovering over chart
+// To add hover effects, use CSS in your stylesheet, not in JavaScript files.
