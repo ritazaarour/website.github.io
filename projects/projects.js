@@ -103,9 +103,3 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
-
-let newSVG = d3.select('svg');
-newSVG.selectAll('path').remove();
-
-//hovering over chart
-// To add hover effects, use CSS in your stylesheet, not in JavaScript files.
