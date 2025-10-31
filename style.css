@@ -210,3 +210,10 @@ dd {
   align-items: center;
 }
 
+.searchBar {
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 2em;
+  height: 2em;
+}
+
