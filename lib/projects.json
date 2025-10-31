@@ -12,7 +12,7 @@
         "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset."
     },
     {
-        "title": "Fitness Data Analysis",
+        "title": "Fitness Data EDA",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling."
@@ -24,10 +24,16 @@
         "description": "Created price comparison visualizations for grocery items across stores and categories."
     },
     {
-        "title": "Global Happiness Score Analysis (EDA)",
+        "title": "Global Happiness Score EDA",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Performed exploratory data analysis on world happiness data using NumPy, Pandas, and Seaborn. Visualized relationships between economy, life expectancy, freedom, and overall happiness scores across regions."
+    },
+    {
+        "title": "Using CTL Induced Cytotoxicity to Analyze Caspase-3 Activity in Naïve and Pathogen Mice",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type."
     },
     {
         "title": "TBA1",
@@ -64,11 +70,5 @@
         "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Totam quaerat, ipsa eaque nesciunt magni mollitia odit praesentium hic adipisci quisquam laudantium aliquid asperiores dignissimos accusamus! Sunt quaerat numquam facere esse molestias veniam debitis, maiores et, perspiciatis, impedit quidem!"
-    },
-    {
-        "title": "TBA7",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Corporis enim facilis dolores dolorum officiis eum necessitatibus velit rem quos numquam assumenda tempora atque, natus rerum quisquam aut quas laudantium mollitia consectetur quo! Reiciendis suscipit nam consequatur exercitationem odit."
     }
 ]
