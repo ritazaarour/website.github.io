@@ -73,63 +73,25 @@ function renderPieChart(projectsGiven) {
   let newSliceGenerator = d3.pie().value((d) => d.value);
   let newArcData = newSliceGenerator(newData);
   let newArcs = newArcData.map((d) => arcGenerator(d));
-
-  // --- clear up old paths & update slices (D3 join) ---
-  // Ensure there's a group for slices inside your SVG; adjust selector as needed
-  const svg = d3.select('#pie-svg'); // change selector to match your markup
-  let slicesGroup = svg.selectAll('g.slices').data([null]);
-  slicesGroup = slicesGroup.enter().append('g').attr('class', 'slices').merge(slicesGroup);
-
-  // Join new data to path elements
-  const paths = slicesGroup.selectAll('path.slice').data(newArcData, d => d.data.label);
-  // Exit
-  paths.exit().transition().duration(250).attr('opacity', 0).remove();
-  // Enter + update
-  paths.enter()
-    .append('path')
-    .attr('class', 'slice')
-    .attr('fill', d => colorScale(d.data.label))
-    .attr('d', d => arcGenerator(d))
-    .attr('opacity', 0)
-    .merge(paths)
-    .transition()
-    .duration(350)
-    .attr('d', d => arcGenerator(d))
-    .attr('fill', d => colorScale(d.data.label))
-    .attr('opacity', 1);
-
-  // --- update legend (simple text + color box example) ---
-  const legendContainer = d3.select('#pie-legend'); // change to your legend container
-  const legendItems = legendContainer.selectAll('.legend-item').data(newData, d => d.label);
-
-  // Remove old legend items
-  legendItems.exit().remove();
-
-  // Add new legend items
-  const enterItems = legendItems.enter()
-    .append('div')
-    .attr('class', 'legend-item')
-    .style('display', 'flex')
-    .style('align-items', 'center')
-    .style('margin-bottom', '4px');
-
-  enterItems.append('span')
-    .attr('class', 'legend-swatch')
-    .style('width', '12px')
-    .style('height', '12px')
-    .style('display', 'inline-block')
-    .style('margin-right', '8px')
-    .style('background-color', d => colorScale(d.label));
-
-  enterItems.append('span')
-    .attr('class', 'legend-label')
-    .text(d => `${d.label} (${d.value})`);
-
-  // Update existing legend text/swatch
-  legendItems.select('.legend-swatch')
-    .style('background-color', d => colorScale(d.label));
-  legendItems.select('.legend-label')
-    .text(d => `${d.label} (${d.value})`);
+  // TODO: clear up paths and legends
+  // Remove existing pie chart paths
+  d3.select('svg').selectAll('path').remove();
+  // Remove existing legend items
+  d3.select('.legend').selectAll('.legend-item').remove();
+  // update paths and legends, refer to steps 1.4 and 2.2
+  newArcs.forEach((arc, idx) => {
+    d3.select('svg')
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', colors(idx));
+  });
+  newData.forEach((d, idx) => {
+    d3.select('.legend')
+      .append('li')
+      .attr('style', `--color:${colors(idx)}`)
+      .attr('class', 'legend-item')
+      .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
+  });
 }
 
 // Call this function on page load
@@ -141,6 +103,3 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
-
-let newSVG = d3.select('svg');
-newSVG.selectAll('path').remove();
