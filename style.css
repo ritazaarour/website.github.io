@@ -206,16 +206,16 @@ dd {
 .container {
   display: flex;
   flex: 1;
-  gap: 1em; 
+  gap: 1em;
   align-items: center;
 }
 
 .searchBar {
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
   margin-inline: auto;
   margin-bottom: 2em;
-  height: 2em;
+  height: 3em;
   font-size: 1em;
 }
 

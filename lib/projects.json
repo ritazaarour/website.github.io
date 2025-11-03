@@ -12,16 +12,16 @@
         "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset."
     },
     {
+        "title": "How Much of My Closet is Thrifted?",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources."
+    },
+    {
         "title": "Fitness Data EDA",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling."
-    },
-    {
-        "title": "Food Price Visualization Project",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created price comparison visualizations for grocery items across stores and categories."
     },
     {
         "title": "Global Happiness Score EDA",
@@ -34,6 +34,12 @@
         "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type."
+    },
+    {
+        "title": "Grocery Store Comparison Visualization Assignment",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created price comparison visualizations for grocery items across stores and categories."
     },
     {
         "title": "TBA1",
@@ -64,11 +70,5 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Hic ex eum a nulla quod quia, explicabo earum tenetur sed ut doloribus tempore eligendi maxime. Dolorum, quisquam aperiam? Exercitationem minus blanditiis dolorum quidem quam, fuga quisquam eveniet nostrum temporibus!"
-    },
-    {
-        "title": "TBA6",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Totam quaerat, ipsa eaque nesciunt magni mollitia odit praesentium hic adipisci quisquam laudantium aliquid asperiores dignissimos accusamus! Sunt quaerat numquam facere esse molestias veniam debitis, maiores et, perspiciatis, impedit quidem!"
     }
 ]
