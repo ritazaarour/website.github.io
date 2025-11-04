@@ -153,7 +153,34 @@ function renderScatterPlot(data, commits) {
     .attr('cx', (d) => xScale(d.datetime))
     .attr('cy', (d) => yScale(d.hourFrac))
     .attr('r', 5)
-    .attr('fill', 'steelblue');
+    .attr('fill', 'steelblue')
+    .on('mouseenter', (event, commit) => {
+        renderTooltipContent(commit);
+    })
+    .on('mouseleave', () => {
+        renderTooltipContent({});
+    });
+}
+
+function renderTooltipContent(commit) {
+  const link = document.getElementById('commit-link');
+  const date = document.getElementById('commit-date');
+
+  if (Object.keys(commit).length === 0) return;
+
+  link.href = commit.url;
+  link.textContent = commit.id;
+  date.textContent = commit.datetime?.toLocaleString('en', {
+    dateStyle: 'full',
+  });
+  const time = document.getElementById('commit-time');
+  time.textContent = commit.time;
+
+  const author = document.getElementById('commit-author');
+  author.textContent = commit.author;
+
+  const linesEdited = document.getElementById('commit-lines-edited');
+  linesEdited.textContent = commit.linesEdited;
 }
 
 let data = await loadData();

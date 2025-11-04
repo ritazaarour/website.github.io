@@ -8,12 +8,31 @@
 </head>
 <body>
     <h1>Meta</h1>
-    
+
     <h3>Summary Stats</h3>
     <div id="stats"></div>
 
     <h3>Commits by Time of Day</h3>
     <div id="chart"></div>
+
+    <dl id="commit-tooltip" class="info tooltip">
+        <dt>Commit</dt>
+        <dd>
+            <a href="" id="commit-link" target="_blank"></a>
+        </dd>
+
+        <dt>Date</dt>
+        <dd id="commit-date"></dd>
+
+        <dt>Time</dt>
+        <dd id="commit-time"></dd>
+
+        <dt>Author</dt>
+        <dd id="commit-author"></dd>
+
+        <dt>Lines Edited</dt>
+        <dd id="commit-lines-edited"></dd>
+</dl>
 
     <script src="../global.js" type="module"></script>
     <script src="meta.js" type="module"></script>
