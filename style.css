@@ -272,11 +272,9 @@ path {
   line-height: 1.1;
 }
 
-.chart {
-  .gridlines {
+.gridlines {
     stroke: #eee;
     stroke-opacity: 0.5;
   }
-}
 
 
