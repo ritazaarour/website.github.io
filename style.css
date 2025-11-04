@@ -168,16 +168,17 @@ nav a:hover {
 
 dl {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 3em;
   text-align: center;
   margin: 2em auto;
-  width: fit-content;
+  width: 100%;
+  max-width: 1200px;
   }
 
 dt {
-  font-size: 0.8rem;
   grid-row-start: 1;
+  text-transform: uppercase;
   color: #333;
 }
 
@@ -185,7 +186,6 @@ dd {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
-  font-size: 2rem;
   color: #666;
 }
 
@@ -249,16 +249,17 @@ path {
 
 .stats dl {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 3em;
   text-align: center;
   margin: 2em auto;
-  width: fit-content;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .stats dt {
-  font-size: 0.8rem;
   grid-row-start: 1;
+  text-transform: uppercase;
   color: #333;
 }
 
@@ -266,6 +267,5 @@ path {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
-  font-size: 2rem;
   color: #666;
 }
