@@ -178,6 +178,7 @@ dl {
 
 dt {
   grid-row-start: 1;
+  margin: 0;
   text-transform: uppercase;
   color: #333;
 }
@@ -186,6 +187,7 @@ dd {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
+  font-size: 2rem;
   color: #666;
 }
 
@@ -259,6 +261,7 @@ path {
 
 .stats dt {
   grid-row-start: 1;
+  margin: 0;
   text-transform: uppercase;
   color: #333;
 }
@@ -267,5 +270,6 @@ path {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
+  font-size: 2rem;
   color: #666;
 }
