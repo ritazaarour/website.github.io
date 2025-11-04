@@ -75,9 +75,11 @@ function renderCommitInfo(data, commits) {
   let maxHour = Array.from(hourCounts).reduce((a, b) =>
     a[1] > b[1] ? a : b
   )[0];
+  let ampm = maxHour >= 12 ? 'PM' : 'AM';
+  let displayHour = maxHour % 12 || 12;
 
   dl.append('dt').text('Hour with most commits');
-  dl.append('dd').text(`${maxHour}:00 - ${maxHour}:59`);
+  dl.append('dd').text(`${displayHour}:00 ${ampm} - ${displayHour}:59 ${ampm}`);
 }
 
 let data = await loadData();
