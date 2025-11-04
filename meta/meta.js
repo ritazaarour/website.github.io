@@ -44,7 +44,46 @@ function processCommits(data) {
     });
 }
 
+console.log(commits);
+
+//add commit info to the page
+function renderCommitInfo(data, commits) {
+  const dl = d3.select('#stats').append('dl').attr('class', 'stats');
+
+  // Add total commits
+  dl.append('dt').text('Total commits');
+  dl.append('dd').text(commits.length);
+
+  // Add day of week with most commits
+  let dayOfWeekCounts = d3.rollup(
+    data,
+    (v) => v.length,
+    (d) => d.datetime.getDay()
+  );
+  let maxDay = Array.from(dayOfWeekCounts).reduce((a, b) =>
+    a[1] > b[1] ? a : b
+  )[0];
+  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  
+  dl.append('dt').text('Day with most commits');
+  dl.append('dd').text(dayNames[maxDay]);
+
+  //Add time of day with most commits
+  let hourCounts = d3.rollup(
+    data,
+    (v) => v.length,
+    (d) => d.datetime.getHours()
+  );
+  let maxHour = Array.from(hourCounts).reduce((a, b) =>
+    a[1] > b[1] ? a : b
+  )[0];
+
+  dl.append('dt').text('Hour with most commits');
+  dl.append('dd').text(`${maxHour}:00 - ${maxHour}:59`);
+}
+
 let data = await loadData();
 let commits = processCommits(data);
-console.log(commits);
+
+renderCommitInfo(data, commits);
 
