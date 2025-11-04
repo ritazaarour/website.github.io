@@ -187,8 +187,9 @@ dd {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #666;
+  line-height: 1.1;
 }
 
 .legend {
@@ -270,6 +271,7 @@ path {
   margin: 0;
   grid-row-start: 2;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #666;
+  line-height: 1.1;
 }
