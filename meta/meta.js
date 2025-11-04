@@ -93,7 +93,7 @@ function renderScatterPlot(data, commits) {
     .append('svg')
     .attr('viewBox', `0 0 ${width} ${height}`)
     .style('overflow', 'visible');
-    
+
     //define scales
     const xScale = d3
     .scaleTime()
@@ -118,7 +118,9 @@ function renderScatterPlot(data, commits) {
 
     // create the axes
     const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3.axisLeft(yScale);
+    const yAxis = d3
+    .axisLeft(yScale)
+    .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
 
     // add x axis
     svg
