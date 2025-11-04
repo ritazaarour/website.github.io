@@ -37,8 +37,7 @@ function processCommits(data) {
       Object.defineProperty(ret, 'lines', {
         value: lines,
         writable: false,
-        enumerable: true,
-        configurable: true
+        enumerable: false
       });
 
       return ret;
