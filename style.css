@@ -271,3 +271,12 @@ path {
   color: #666;
   line-height: 1.1;
 }
+
+.chart {
+  .gridlines {
+    stroke: #eee;
+    stroke-opacity: 0.5;
+  }
+}
+
+
