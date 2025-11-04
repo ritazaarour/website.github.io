@@ -87,19 +87,35 @@ function renderScatterPlot(data, commits) {
     //define dimensions
     const width = 1000;
     const height = 600;
-    const svg = d3
-        .select('#chart')
-        .append('svg')
-        .attr('viewBox', `0 0 ${width} ${height}`)
-        .style('overflow', 'visible');
-    //creating scales
-    const xScale = d3
-        .scaleTime()
-        .domain(d3.extent(commits, (d) => d.datetime))
-        .range([0, width])
-        .nice();
-    
-    const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+    const margin = { top: 10, right: 10, bottom: 30, left: 20 };
+    const usableArea = {
+        top: margin.top,
+        right: width - margin.right,
+        bottom: height - margin.bottom,
+        left: margin.left,
+        width: width - margin.left - margin.right,
+        height: height - margin.top - margin.bottom,
+    };
+    // Update scales with new ranges
+    xScale.range([usableArea.left, usableArea.right]);
+    yScale.range([usableArea.bottom, usableArea.top]);
+
+    // create the axes
+    const xAxis = d3.axisBottom(xScale);
+    const yAxis = d3.axisLeft(yScale);
+
+    // add x axis
+    svg
+     .append('g')
+     .attr('transform', `translate(0, ${usableArea.bottom})`)
+     .call(xAxis);
+
+    // add y axis
+    svg
+     .append('g')
+     .attr('transform', `translate(${usableArea.left}, 0)`)
+     .call(yAxis);
+
     //adding circles for scatter plot
     const dots = svg.append('g').attr('class', 'dots');
 
