@@ -171,7 +171,6 @@ dl {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 3em;
   text-align: center;
-  margin: 2em auto;
   width: 100%;
   max-width: 1200px;
   }
@@ -255,7 +254,6 @@ path {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 3em;
   text-align: center;
-  margin: 2em auto;
   width: 100%;
   max-width: 1200px;
 }
