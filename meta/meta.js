@@ -143,10 +143,6 @@ function renderScatterPlot(data, commits) {
     .attr('transform', `translate(${usableArea.left}, 0)`)
     .call(yAxis);
 
-    function createBrushSelector(svg) {
-      svg.call(d3.brush());
-    }
-
     //range of edited lines
     const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
     const rScale = d3.scaleSqrt().domain([minLines, maxLines]).range([2, 30]);
@@ -173,6 +169,10 @@ function renderScatterPlot(data, commits) {
     .on('mouseleave', (event) => {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
       updateTooltipVisibility(false);
+    
+    function createBrushSelector(svg) {
+      svg.call(d3.brush());
+    }
     });
 }
 
