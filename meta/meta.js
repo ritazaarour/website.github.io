@@ -95,13 +95,13 @@ function renderScatterPlot(data, commits) {
     .style('overflow', 'visible');
 
     //define scales
-    const xScale = d3
+    let xScale = d3
     .scaleTime()
     .domain(d3.extent(commits, (d) => d.datetime))
     .range([0, width])
     .nice();
 
-    const yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
+    let yScale = d3.scaleLinear().domain([0, 24]).range([height, 0]);
 
     //define usable area
     const usableArea = {
@@ -212,7 +212,25 @@ function createBrushSelector(svg) {
 }
 
 function brushed(event) {
-  console.log(event);
+  const selection = event.selection;
+  d3.selectAll('circle').classed('selected', (d) =>
+    isCommitSelected(selection, d),
+  );
+}
+
+function isCommitSelected(selection, commit) {
+  if (!selection) {
+    
+    return false;
+  }
+  const [[x0, y0], [x1, y1]] = selection;
+  const cx = d3.scaleTime()
+    .domain(d3.extent(commits, (d) => d.datetime))
+    .range([0, 1000])(commit.datetime);
+  const cy = d3.scaleLinear()
+    .domain([0, 24])
+    .range([600, 0])(commit.hourFrac);
+  return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;
 }
 
 let data = await loadData();
