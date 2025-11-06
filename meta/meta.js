@@ -172,6 +172,10 @@ function renderScatterPlot(data, commits) {
     });
 }
 
+function createBrushSelector(svg) {
+  svg.call(d3.brush());
+}
+
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
   const date = document.getElementById('commit-date');
