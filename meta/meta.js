@@ -208,7 +208,11 @@ function updateTooltipPosition(event) {
 
 function createBrushSelector(svg) {
   svg.call(d3.brush());
-  svg.selectAll('.dots, .overlay ~ *').raise();
+  svg.call(d3.brush().on('start brush end', brushed));
+}
+
+function brushed(event) {
+  console.log(event);
 }
 
 let data = await loadData();
