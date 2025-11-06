@@ -169,11 +169,11 @@ function renderScatterPlot(data, commits) {
     .on('mouseleave', (event) => {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
       updateTooltipVisibility(false);
-    
-    function createBrushSelector(svg) {
-      svg.call(d3.brush());
-    }
     });
+}
+
+function createBrushSelector(svg) {
+  svg.call(d3.brush());
 }
 
 function renderTooltipContent(commit) {
