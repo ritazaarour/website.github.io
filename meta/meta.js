@@ -172,9 +172,7 @@ function renderScatterPlot(data, commits) {
     });
 }
 
-function createBrushSelector(svg) {
-  svg.call(d3.brush());
-}
+
 
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
@@ -208,9 +206,14 @@ function updateTooltipPosition(event) {
   tooltip.style.top = `${event.clientY}px`;
 }
 
+function createBrushSelector(svg) {
+  svg.call(d3.brush());
+}
+
 let data = await loadData();
 let commits = processCommits(data);
 console.log(commits);
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
+createBrushSelector(d3.select('#chart svg'));
 
