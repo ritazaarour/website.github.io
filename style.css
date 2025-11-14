@@ -52,6 +52,12 @@ img {
   flex-direction: column;
 }
 
+.project-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+}
+
 .projects a {
   text-decoration: none;
   color: inherit;
