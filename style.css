@@ -56,15 +56,6 @@ img {
   margin: 0;
 }
 
-.projects a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.projects a:hover img {
-  transform: scale(1.05);
-}
-
 form {
   display: grid; 
   grid-template-columns: auto 1fr;      
