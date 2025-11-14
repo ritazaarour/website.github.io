@@ -28,7 +28,7 @@ body {
 
 img {
   width: 100%;
-  max-width: 700px;
+  max-width: 200px;
   height: auto;
   display: block;
   margin-inline: auto;
@@ -65,6 +65,7 @@ img {
   border-radius: 6px;
   display: block;
   transition: transform 0.3s ease;
+  align-items: center;
 }
 
 .projects a {
