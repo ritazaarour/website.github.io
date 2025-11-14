@@ -42,9 +42,16 @@ img {
 }
 
 .projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+}
+
+.project-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0.5em;
 }
 
 .projects h2 {
