@@ -61,11 +61,11 @@ img {
 .projects img {
   width: 100%;
   height: 200px;
+  aspect-ratio: 3/2;
   object-fit: cover;
   border-radius: 6px;
   display: block;
   transition: transform 0.3s ease;
-  align-items: center;
 }
 
 .projects a {
