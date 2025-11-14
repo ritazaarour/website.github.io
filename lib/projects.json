@@ -3,43 +3,50 @@
         "title": "Persuasive/Deceptive Visualization",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Visualized and debated oil dependence in Arab economies using comparative bar charts."
+        "description": "Visualized and debated oil dependence in Arab economies using comparative bar charts.",
+        "link": "https://ritazaarour.github.io/project2.github.io/"
     },
     {
         "title": "Flight Delay Analysis",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset."
+        "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset.",
+        "link": "https://github.com/SmoothData-BigBrain/GroupProject"
     },
     {
         "title": "How Much of My Closet is Thrifted?",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources."
+        "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources.",
+        "link": "#"
     },
     {
         "title": "Fitness Data EDA",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling."
+        "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling.",
+        "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/Final_Project_Fall2024.ipynb"
     },
     {
         "title": "Global Happiness Score EDA",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Performed exploratory data analysis on world happiness data using NumPy, Pandas, and Seaborn. Visualized relationships between economy, life expectancy, freedom, and overall happiness scores across regions."
+        "description": "Performed exploratory data analysis on world happiness data using NumPy, Pandas, and Seaborn. Visualized relationships between economy, life expectancy, freedom, and overall happiness scores across regions.",
+        "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/mini_project.ipynb"
     },
     {
         "title": "Using CTL Induced Cytotoxicity to Analyze Caspase-3 Activity in Naïve and Pathogen Mice",
         "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type."
+        "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type.",
+        "link": "#"
     },
     {
         "title": "Grocery Store Comparison Visualization Assignment",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created price comparison visualizations for grocery items across stores and categories."
+        "description": "Created price comparison visualizations for grocery items across stores and categories.",
+        "link": "#"
     },
     {
         "title": "TBA1",
