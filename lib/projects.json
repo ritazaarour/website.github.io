@@ -4,6 +4,7 @@
         "year": "2025",
         "image": "/website.github.io/images/P:D viz.png",
         "description": "Visualized and debated oil dependence in Arab economies using comparative bar charts.",
+        "tools": "Tableau, HTML, CSS, Javascript",
         "link": "https://ritazaarour.github.io/project2.github.io/"
     },
     {
@@ -11,6 +12,7 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset.",
+        "tools": "Pyspark",
         "link": "https://github.com/SmoothData-BigBrain/GroupProject"
     },
     {
@@ -18,6 +20,7 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources.",
+        "tools": "Excel",
         "link": "#"
     },
     {
@@ -25,6 +28,7 @@
         "year": "2024",
         "image": "/website.github.io/images/FDD.png",
         "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling.",
+        "tools": "Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn (Logistic regression)",
         "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/Final_Project_Fall2024.ipynb"
     },
     {
@@ -32,6 +36,7 @@
         "year": "2024",
         "image": "/website.github.io/images/GHSA.png",
         "description": "Performed exploratory data analysis on world happiness data using NumPy, Pandas, and Seaborn. Visualized relationships between economy, life expectancy, freedom, and overall happiness scores across regions.",
+        "tools":"Numpy, Pandas, Matplotlib, Seaborn",
         "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/mini_project.ipynb"
     },
     {
@@ -39,6 +44,7 @@
         "year": "2025",
         "image": "/website.github.io/images/bikewatching.png",
         "description": "A fully interactive Mapbox and D3.js visualization that maps Boston’s Bluebikes network, showing station traffic volumes, directional flow patterns (arrivals vs. departures), and time-based activity using a dynamic slider and data filtering.",
+        "tools":"HTML, CSS, Javascript, D3, Mapbox",
         "link": "https://ritazaarour.github.io/bikewatching.github.io/"
     },
     {
@@ -46,6 +52,7 @@
         "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type.",
+        "tools": "ELISA, Flow Cytometry",
         "link": "#"
     },
     {
@@ -53,6 +60,7 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Created price comparison visualizations for grocery items across stores and categories.",
+        "tools": "Tableau",
         "link": "#"
     },
     {
