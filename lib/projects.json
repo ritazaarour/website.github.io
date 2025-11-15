@@ -23,16 +23,23 @@
     {
         "title": "Fitness Data EDA",
         "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "images/FDD.png",
         "description": "Explored trends using a fitness dataset, applying NumPy, Pandas, and Seaborn for EDA, and Scikit-learn for predictive modeling.",
         "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/Final_Project_Fall2024.ipynb"
     },
     {
         "title": "Global Happiness Score EDA",
         "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "images/GHSA.png",
         "description": "Performed exploratory data analysis on world happiness data using NumPy, Pandas, and Seaborn. Visualized relationships between economy, life expectancy, freedom, and overall happiness scores across regions.",
         "link": "https://github.com/ritazaarour/DSC207R-PythonProjects-Fall2024/blob/main/mini_project.ipynb"
+    },
+    {
+        "title": "Bikewatching - Geospatial Visualization",
+        "year": "2025",
+        "image": "images/bikewatching.png",
+        "description": "A fully interactive Mapbox and D3.js visualization that maps Boston’s Bluebikes network, showing station traffic volumes, directional flow patterns (arrivals vs. departures), and time-based activity using a dynamic slider and data filtering.",
+        "link": "https://ritazaarour.github.io/bikewatching.github.io/"
     },
     {
         "title": "Using CTL Induced Cytotoxicity to Analyze Caspase-3 Activity in Naïve and Pathogen Mice",
@@ -71,11 +78,5 @@
         "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Rem illum corrupti ipsa vel nam culpa voluptas expedita rerum porro itaque deleniti at debitis nesciunt aliquam inventore, harum ratione ipsam, quidem, saepe esse veniam. Earum eius quos veniam sed."
-    },
-    {
-        "title": "TBA5",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Hic ex eum a nulla quod quia, explicabo earum tenetur sed ut doloribus tempore eligendi maxime. Dolorum, quisquam aperiam? Exercitationem minus blanditiis dolorum quidem quam, fuga quisquam eveniet nostrum temporibus!"
     }
 ]

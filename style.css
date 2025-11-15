@@ -58,6 +58,14 @@ img {
   color: inherit;
 }
 
+.projects img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  transition: transform 200ms;
+} 
+
 .projects a {
   text-decoration: none;
   color: inherit;
