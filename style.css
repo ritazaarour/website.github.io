@@ -22,8 +22,11 @@ body {
   margin-inline: auto;
 }
 
-.home {
-    text-align: center;
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 2em;
 }
 
 img {
@@ -32,6 +35,10 @@ img {
   height: auto;
   display: block;
   margin-inline: auto;
+}
+
+.description {
+  font-size: 1.25rem;
 }
 
 .projects {
