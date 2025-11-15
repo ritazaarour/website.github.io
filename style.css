@@ -16,7 +16,7 @@ h1 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .home h2 {
@@ -33,7 +33,7 @@ h2 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .projects .project-link h2 {
@@ -46,7 +46,7 @@ h2 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 body { 
