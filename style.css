@@ -11,8 +11,27 @@ h1 {
     color: hotpink;
 }
 
+.home h1 {
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
 h2 {
   text-align: left;
+}
+
+.projects-title {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.contact h1 {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
 }
 
 body { 
