@@ -16,6 +16,13 @@ h1 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.home h2 {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 h2 {
@@ -26,12 +33,20 @@ h2 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.projects .project-link h2 {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 .contact h1 {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-size: 1.25rem;
 }
 
 body { 
@@ -128,12 +143,6 @@ form button {
   margin-block: 2em;
 
   overflow: visible;
-}
-
-h1.home, h1.projects, h1.contact {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
 }
 
 h2.home, h2.projects {
