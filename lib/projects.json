@@ -4,7 +4,7 @@
         "year": "2025",
         "image": "/website.github.io/images/P:D viz.png",
         "description": "Visualized and debated oil dependence in Arab economies using comparative bar charts.",
-        "tools": "Tableau, HTML, CSS, Javascript",
+        "tools": "HTML, CSS, Javascript, Tableau",
         "link": "https://ritazaarour.github.io/project2.github.io/"
     },
     {
@@ -12,7 +12,7 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A group project that analyzed flight delay patterns using PySpark on a large Kaggle dataset.",
-        "tools": "Pyspark",
+        "tools": "Pyspark, Pandas, Matplotlib",
         "link": "https://github.com/SmoothData-BigBrain/GroupProject"
     },
     {
@@ -20,7 +20,7 @@
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources.",
-        "tools": "Excel",
+        "tools": "Excel (Pivot Tables)",
         "link": "#"
     },
     {
@@ -50,7 +50,7 @@
     {
         "title": "Using CTL Induced Cytotoxicity to Analyze Caspase-3 Activity in Naïve and Pathogen Mice",
         "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "/website.github.io/images/immuno.png",
         "description": "Conducted an immunology experiment to measure Caspase-3 activity in naïve and pathogen-infected mice using a cytotoxic T lymphocyte (CTL) assay. Prepared and incubated target cells with effector CTLs to assess apoptosis via spectrophotometric absorbance. Compared Caspase-3 activity levels to evaluate immune response mechanisms and identify the pathogen type.",
         "tools": "ELISA, Flow Cytometry",
         "link": "#"
@@ -58,10 +58,10 @@
     {
         "title": "Grocery Store Comparison Visualization Assignment",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "/website.github.io/images/grocery.png",
         "description": "Created price comparison visualizations for grocery items across stores and categories.",
         "tools": "Tableau",
-        "link": "#"
+        "link": "https://drive.google.com/file/d/1JNVJpdAEjR0hBo-J-wKPtwmF7OCZbb4c/view?usp=sharing"
     },
     {
         "title": "TBA1",
