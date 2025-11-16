@@ -25,6 +25,12 @@ h1 {
   font-weight: 500;
 }
 
+.home p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
 h2 {
   text-align: left;
 }
@@ -40,6 +46,12 @@ h2 {
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+}
+
+.projects p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 .contact h1 {
