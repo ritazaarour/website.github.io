@@ -100,7 +100,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       <img src="${project.image}" alt="${project.title}">
       <div class="project-details">
         <p>${project.description}</p>
-        <p><strong>Tools:</strong>${project.tools}</p>
+        <p><strong>Tools: </strong>${project.tools}</p>
         <p><em>${project.year}</em></p>
       </div>
     </a>`;
