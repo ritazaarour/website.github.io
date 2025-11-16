@@ -16,14 +16,6 @@
         "link": "https://github.com/SmoothData-BigBrain/GroupProject"
     },
     {
-        "title": "How Much of My Closet is Thrifted?",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources.",
-        "tools": "Excel (Pivot Tables)",
-        "link": "#"
-    },
-    {
         "title": "Fitness Data EDA",
         "year": "2024",
         "image": "/website.github.io/images/FDD.png",
@@ -46,6 +38,14 @@
         "description": "A fully interactive Mapbox and D3.js visualization that maps Boston’s Bluebikes network, showing station traffic volumes, directional flow patterns (arrivals vs. departures), and time-based activity using a dynamic slider and data filtering.",
         "tools":"HTML, CSS, Javascript, D3, Mapbox",
         "link": "https://ritazaarour.github.io/bikewatching.github.io/"
+    },
+    {
+        "title": "How Much of My Closet is Thrifted?",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a personal dataset to analyze my wardrobe composition and quantify how much of it was thrifted. Used Excel for tracking and data visualization to explore patterns across item categories and sources.",
+        "tools": "Excel (Pivot Tables)",
+        "link": "#"
     },
     {
         "title": "Using CTL Induced Cytotoxicity to Analyze Caspase-3 Activity in Naïve and Pathogen Mice",
